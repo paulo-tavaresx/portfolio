@@ -10,7 +10,7 @@ type Props = {
 export const Imagem = ({ src, alt, width, ratio }: Props) => {
   return (
     <Styled.ImagemContainer width={width} ratio={ratio}>
-      <Styled.Imagem src={src} alt={alt} />
+      <Styled.Imagem src={src} ratio={ratio} alt={alt} />
     </Styled.ImagemContainer>
   )
 }

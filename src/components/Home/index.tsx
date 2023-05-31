@@ -1,8 +1,8 @@
 import { Imagem } from '../Imagem'
 import { SectionContainerSecondaryColor } from '../SectionContainer'
 import * as Styled from './styles'
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { ContainerFlex } from '../ContainerFlex'
+import { Icon } from '../icon'
 
 type Props = {
   id: string
@@ -19,8 +19,8 @@ export const Home = ({ id }: Props) => {
           </Styled.TextMain>
           <Styled.TextSecondary>Desenvolvedor front-end</Styled.TextSecondary>
           <Styled.ContainerFlex>
-            <BsGithub size="4rem" title="Github" />
-            <BsLinkedin size="4rem" title="Linkedin" />
+            <Icon className="devicon-linkedin-plain"></Icon>
+            <Icon className="devicon-github-original colored"></Icon>
           </Styled.ContainerFlex>
         </Styled.ContainerFlexColumn>
         <Imagem src="/robot-icon-vector-16.jpg" />

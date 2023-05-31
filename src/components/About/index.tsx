@@ -9,10 +9,10 @@ type Props = {
 export const About = ({ id }: Props) => {
   return (
     <SectionContainer id={id}>
-      <Styled.CategoryTitle>About me</Styled.CategoryTitle>
+      <Styled.CategoryTitle>Sobre mim</Styled.CategoryTitle>
       <Styled.ContainerFlex>
-        <Imagem width={50} ratio="3/2" src="/aboutimage.jpg" />
-        <Styled.DescriptionText width={40} ratio="3/1">
+        <Imagem width={40} ratio="3/2" src="/aboutimage.jpg" />
+        <Styled.DescriptionText width={50}>
           Olá, me chamo Paulo, Sou um desenvolvedor frontend em constante busca
           por conhecimento e aprimoramento, pois acredito que esses são os
           pilares para me destacar nessa área em constante evolução. Estou

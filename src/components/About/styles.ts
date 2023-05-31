@@ -2,18 +2,16 @@ import styled, { css } from 'styled-components'
 
 type Props = {
   width?: number
-  ratio?: string
 }
 
 export const ContainerFlex = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 3rem;
+  align-items: center;
+  gap: 3.5rem;
   @media screen and (min-width: 769px) {
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
   }
 `
 export const CategoryTitle = styled.h2`
@@ -22,9 +20,9 @@ export const CategoryTitle = styled.h2`
 `
 
 export const DescriptionText = styled.p<Props>`
-  font-size: 1.6rem;
-  ${({ width, ratio }) => css`
+  font-size: 1.8rem;
+  font-weight: 600;
+  ${({ width }) => css`
     max-width: ${width + 'rem' ?? '100%'};
-    aspect-ratio: ${ratio ?? 1};
   `}
 `

@@ -4,10 +4,13 @@ type Props = {
   width?: number
   ratio?: string
 }
-export const Imagem = styled.img`
+export const Imagem = styled.img<Props>`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${({ ratio }) => css`
+    aspect-ratio: ${ratio ?? 1};
+  `}
 `
 
 export const ImagemContainer = styled.div<Props>`

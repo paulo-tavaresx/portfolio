@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Homepage from './pages/Homepage/index.tsx'
+import { Homepage } from './pages/Homepage/index.tsx'
+import 'devicon/devicon.min.css'
 
 import { createGlobalStyle } from 'styled-components'
 
@@ -11,11 +12,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
   }
   :root{
-    --main-color:grey;
-    --secondary-color:lightblue;
-    --header-color: orange;
+    --main-color:  #D9D9D9;
+    --secondary-color: #8F60BF;
+    --header-color:  #B784D9;
     --main-font-color:black;
-    --emphasis-color:grey;
+    --emphasis-color:#D9D9D9;
+    --shadow-opacity:0.3;
+    --cards-background-color: #D9D9D9;
   }
   body {
     min-height: 100vh;
