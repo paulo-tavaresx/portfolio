@@ -14,10 +14,6 @@ export const ContainerFlex = styled.div`
     flex-direction: row;
   }
 `
-export const CategoryTitle = styled.h2`
-  font-size: 3.5rem;
-  margin: 1rem 0 4rem;
-`
 
 export const DescriptionText = styled.p<Props>`
   font-size: 1.8rem;

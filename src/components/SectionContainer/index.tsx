@@ -10,11 +10,3 @@ type Props = {
 export const SectionContainer = ({ children, id }: Props) => {
   return <Styled.SectionContainer id={id}>{children}</Styled.SectionContainer>
 }
-
-export const SectionContainerSecondaryColor = ({ children, id }: Props) => {
-  return (
-    <Styled.SectionContainerSecondaryColor id={id}>
-      {children}
-    </Styled.SectionContainerSecondaryColor>
-  )
-}

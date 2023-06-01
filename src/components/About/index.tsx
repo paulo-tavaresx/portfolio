@@ -1,3 +1,4 @@
+import { CategoryTitle } from '../CategoryTitle'
 import { Imagem } from '../Imagem'
 import { SectionContainer } from '../SectionContainer'
 import * as Styled from './styles'
@@ -9,10 +10,10 @@ type Props = {
 export const About = ({ id }: Props) => {
   return (
     <SectionContainer id={id}>
-      <Styled.CategoryTitle>Sobre mim</Styled.CategoryTitle>
+      <CategoryTitle bottom={3.5}>Sobre mim</CategoryTitle>
       <Styled.ContainerFlex>
-        <Imagem width={40} ratio="3/2" src="/aboutimage.jpg" />
-        <Styled.DescriptionText width={50}>
+        <Imagem width={40} ratio="3/2" radius="1.5" src="/aboutimage.jpg" />
+        <Styled.DescriptionText width={55}>
           Olá, me chamo Paulo, Sou um desenvolvedor frontend em constante busca
           por conhecimento e aprimoramento, pois acredito que esses são os
           pilares para me destacar nessa área em constante evolução. Estou

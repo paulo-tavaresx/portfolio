@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-export const CategoryTitle = styled.h2`
-  font-size: 3.5rem;
-  margin: 2rem 0 4rem;
-  text-align: center;
-`
 export const SkillsContainer = styled.ul`
   list-style-type: none;
   display: flex;
@@ -19,10 +14,9 @@ export const SkillsContainer = styled.ul`
 `
 
 export const SkillCard = styled.li`
-  max-width: 10rem;
+  max-width: 15rem;
   width: 100%;
-  height: 12rem;
-  padding: 2rem;
+  padding: 2rem 1.5rem 1rem;
   border-radius: 1.5rem;
   display: flex;
   align-items: center;

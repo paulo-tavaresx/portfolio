@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-  padding: 2rem max(calc((100% - 120rem) / 2), 3rem);
+  padding: 4rem max(calc((100% - 120rem) / 2), 3rem);
   display: flex;
   align-items: center;
   gap: 2rem;

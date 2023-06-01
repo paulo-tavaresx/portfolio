@@ -1,8 +1,9 @@
 import { Imagem } from '../Imagem'
-import { SectionContainerSecondaryColor } from '../SectionContainer'
+import { SectionContainer } from '../SectionContainer'
 import * as Styled from './styles'
 import { ContainerFlex } from '../ContainerFlex'
 import { Icon } from '../icon'
+import { IconLink } from '../IconLink'
 
 type Props = {
   id: string
@@ -10,7 +11,7 @@ type Props = {
 
 export const Home = ({ id }: Props) => {
   return (
-    <SectionContainerSecondaryColor id={id}>
+    <SectionContainer id={id}>
       <ContainerFlex>
         <Styled.ContainerFlexColumn>
           <Styled.TextMain>
@@ -19,12 +20,20 @@ export const Home = ({ id }: Props) => {
           </Styled.TextMain>
           <Styled.TextSecondary>Desenvolvedor front-end</Styled.TextSecondary>
           <Styled.ContainerFlex>
-            <Icon className="devicon-linkedin-plain"></Icon>
-            <Icon className="devicon-github-original colored"></Icon>
+            <IconLink
+              className="devicon-linkedin-plain"
+              link="https://www.linkedin.com/in/paulo-tavaresx/"
+              target="_blank"
+            />
+            <IconLink
+              className="devicon-github-original colored"
+              link="https://github.com/paulo-tavaresx"
+              target="_blank"
+            />
           </Styled.ContainerFlex>
         </Styled.ContainerFlexColumn>
         <Imagem src="/robot-icon-vector-16.jpg" />
       </ContainerFlex>
-    </SectionContainerSecondaryColor>
+    </SectionContainer>
   )
 }

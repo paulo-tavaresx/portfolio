@@ -16,9 +16,10 @@ const GlobalStyle = createGlobalStyle`
     --secondary-color: #8F60BF;
     --header-color:  #B784D9;
     --main-font-color:black;
-    --emphasis-color:#D9D9D9;
+    --emphasis-color:#B784D9;
     --shadow-opacity:0.3;
     --cards-background-color: #D9D9D9;
+    --font-light-color:#000000
   }
   body {
     min-height: 100vh;

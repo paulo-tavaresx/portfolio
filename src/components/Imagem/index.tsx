@@ -5,12 +5,13 @@ type Props = {
   alt?: string
   width?: number
   ratio?: string
+  radius?: string
 }
 
-export const Imagem = ({ src, alt, width, ratio }: Props) => {
+export const Imagem = ({ src, alt, width, ratio, radius }: Props) => {
   return (
-    <Styled.ImagemContainer width={width} ratio={ratio}>
-      <Styled.Imagem src={src} ratio={ratio} alt={alt} />
+    <Styled.ImagemContainer width={width} radius={radius} ratio={ratio}>
+      <Styled.Imagem src={src} radius={radius} ratio={ratio} alt={alt} />
     </Styled.ImagemContainer>
   )
 }
