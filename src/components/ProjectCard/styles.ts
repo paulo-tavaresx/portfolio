@@ -26,7 +26,6 @@ export const ProjectName = styled.h4`
 `
 export const ProjectDescription = styled.p`
   font-size: 1.8rem;
-  font-weight: 700;
   max-width: 40rem;
 `
 export const ContentContainer = styled.div`

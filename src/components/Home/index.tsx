@@ -1,8 +1,6 @@
-import { Imagem } from '../Imagem'
 import { SectionContainer } from '../SectionContainer'
 import * as Styled from './styles'
 import { ContainerFlex } from '../ContainerFlex'
-import { Icon } from '../icon'
 import { IconLink } from '../IconLink'
 
 type Props = {
@@ -32,7 +30,6 @@ export const Home = ({ id }: Props) => {
             />
           </Styled.ContainerFlex>
         </Styled.ContainerFlexColumn>
-        <Imagem src="/robot-icon-vector-16.jpg" />
       </ContainerFlex>
     </SectionContainer>
   )

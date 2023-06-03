@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const ContainerFlexColumn = styled.div`
-  margin-top: 6rem;
+  padding: 6rem 0 0;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  @media screen and (min-width: 769px) {
+    padding: 11.5rem 0 8.5rem;
+  }
 `
 
 export const ContainerFlex = styled.div`

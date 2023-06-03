@@ -12,7 +12,7 @@ type Props = {
 export const SkillsSection = ({ id }: Props) => {
   return (
     <SectionContainer id={id}>
-      <CategoryTitle bottom={3.5} align="center">
+      <CategoryTitle top={2} bottom={3.5} align="center">
         Habilidades
       </CategoryTitle>
       <Styled.SkillsContainer>

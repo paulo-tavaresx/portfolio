@@ -13,13 +13,14 @@ const GlobalStyle = createGlobalStyle`
   }
   :root{
     --main-color:  #D9D9D9;
-    --secondary-color: #8F60BF;
+    --secondary-color: #B784D9;
     --header-color:  #B784D9;
     --main-font-color:black;
     --emphasis-color:#B784D9;
     --shadow-opacity:0.3;
     --cards-background-color: #D9D9D9;
     --font-light-color:#000000
+    --font-color-white:white;
   }
   body {
     min-height: 100vh;

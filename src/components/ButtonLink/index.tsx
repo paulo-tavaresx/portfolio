@@ -7,7 +7,7 @@ type Props = {
   ratio?: string
   target?: string
   children: ReactNode
-  projectRepository: string
+  link: string
 }
 export const ButtonLink = ({
   radius,
@@ -15,11 +15,11 @@ export const ButtonLink = ({
   ratio,
   children,
   target,
-  projectRepository
+  link
 }: Props) => {
   return (
     <Styled.ButtonLink
-      href={projectRepository}
+      href={link}
       target={target}
       radius={radius}
       width={width}
