@@ -8,8 +8,8 @@ export const SkillsContainer = styled.ul`
   flex-wrap: wrap;
   gap: 2rem;
   @media screen and (min-width: 769px) {
-    margin: 10rem auto;
-    max-width: 50%;
+    margin: 4rem auto;
+    max-width: 80%;
   }
 `
 
