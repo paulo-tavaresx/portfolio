@@ -5,12 +5,13 @@ type Props = {
   className: string
   target: string
   link: string
+  label: string
   width?: number
 }
 
-export const IconLink = ({ className, link, target, width }: Props) => {
+export const IconLink = ({ className, link, target, width, label }: Props) => {
   return (
-    <Styled.Link href={link} target={target}>
+    <Styled.Link href={link} target={target} aria-label={label}>
       <Icon width={width} className={className} />
     </Styled.Link>
   )

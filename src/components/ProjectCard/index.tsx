@@ -24,7 +24,7 @@ export const ProjectCard = ({
   return (
     <Styled.ProjectCard>
       <Imagem
-        src={'/aboutImagem.jpg'}
+        src={'/aboutImagem.webp'}
         width={40}
         ratio="2/1.5"
         alt={`Project ${projectName} Image Preview ${projectPreview} `}
@@ -39,7 +39,7 @@ export const ProjectCard = ({
 
         <Styled.ContentContainer>
           {techsName.map(key => (
-            <Icon className={techIcons[key]} />
+            <Icon width={3} className={techIcons[key]} />
           ))}
         </Styled.ContentContainer>
 

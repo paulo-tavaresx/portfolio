@@ -7,7 +7,6 @@ type Props = {
 }
 export const Imagem = styled.img<Props>`
   width: 100%;
-  height: 100%;
   object-fit: cover;
   ${({ ratio, radius }) => css`
     aspect-ratio: ${ratio ?? 1};
@@ -17,11 +16,9 @@ export const Imagem = styled.img<Props>`
 
 export const ImagemContainer = styled.div<Props>`
   ${({ width, ratio, radius }) => css`
+    flex-shrink: 0;
     max-width: ${width + 'rem' ?? '100%'};
     aspect-ratio: ${ratio ?? 1};
     border-radius: ${radius + 'rem' ?? 0};
   `}
 `
-
-
-

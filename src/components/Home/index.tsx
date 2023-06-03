@@ -22,11 +22,13 @@ export const Home = ({ id }: Props) => {
               className="devicon-linkedin-plain"
               link="https://www.linkedin.com/in/paulo-tavaresx/"
               target="_blank"
+              label="linkedin"
             />
             <IconLink
               className="devicon-github-original colored"
               link="https://github.com/paulo-tavaresx"
               target="_blank"
+              label="github"
             />
           </Styled.ContainerFlex>
         </Styled.ContainerFlexColumn>

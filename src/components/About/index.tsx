@@ -14,7 +14,13 @@ export const About = ({ id }: Props) => {
         Sobre mim
       </CategoryTitle>
       <Styled.ContainerFlex>
-        <Imagem width={40} ratio="3/2" radius="1.5" src="/aboutImagem.jpg" />
+        <Imagem
+          width={40}
+          ratio="3/2"
+          radius="1.5"
+          src="/aboutImagem.webp"
+          alt="imagem de uma mão com uma caneta, encima de um teclado de um notebook e alguns códigos html."
+        />
         <Styled.DescriptionText width={55}>
           Olá, meu nome é Paulo, Sou um desenvolvedor front-end em constante
           busca por conhecimento e aprimoramento, pois acredito que esses são os
