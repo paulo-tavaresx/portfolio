@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
     color:var(--main-font-color)
   }
 
