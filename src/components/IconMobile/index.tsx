@@ -9,7 +9,11 @@ type Props = {
 export const IconMobile = ({ isOpen, onClick }: Props) => {
   return (
     <Styled.MenuIcon>
-      <Styled.Line onClick={onClick} isOpen={isOpen}></Styled.Line>
+      <Styled.Line
+        className={`mobileIcon ${isOpen ? 'active' : ''}`}
+        onClick={onClick}
+        isOpen={isOpen}
+      ></Styled.Line>
     </Styled.MenuIcon>
   )
 }

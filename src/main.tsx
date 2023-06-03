@@ -29,6 +29,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--main-dark-color);
     color:var(--font-dark-color);
   }
+
+  body.darkmode {
+    background-color: var(--main-dark-color);
+    color:var(--font-dark-color);
+  }
+
+  body div  .mobileIcon.active{
+    background-color: transparent;
+  }
+  body.darkmode  .mobileIcon{
+    background-color: var(--font-dark-color);
+    &::before,&::after{
+      background-color: var(--font-dark-color);
+    }
+  }
+
+  body .mobileIcon{
+    background-color: var(--font-light-color);
+    &::before,&::after{
+      background-color: var(--font-light-color);
+    }
+  }
   #root{
     background-color:inherit;
     color:inherit;

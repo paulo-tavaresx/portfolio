@@ -5,8 +5,6 @@ type lineType = {
 }
 
 export const isActive = () => css`
-  background-color: transparent;
-
   &::before {
     transform: rotate(45deg);
     top: 10px;
