@@ -7,7 +7,6 @@ type Props = {
   onClick?: MouseEventHandler
   link: string
   target?: string
-  hoverEffect?: boolean
 }
 
 export const Anchor = ({ children, onClick, link, target }: Props) => {

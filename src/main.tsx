@@ -12,20 +12,26 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
   }
   :root{
-    --main-color:  #D9D9D9;
+    --main-light-color:  #D9D9D9;
+    --main-dark-color:#595959;
     --secondary-color: #B784D9;
-    --header-color:  #B784D9;
-    --main-font-color:black;
-    --emphasis-color:#B784D9;
     --shadow-opacity:0.3;
-    --cards-background-color: #D9D9D9;
-    --font-light-color:#000000
-    --font-color-white:white;
+     --font-light-color:#000000;
+     --font-dark-color:#D9D9D9;
   }
   body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    color:var(--main-font-color)
+    color:var(--font-light-color);
+    background-color: var(--main-light-color);
+  }
+  body.darkmode {
+    background-color: var(--main-dark-color);
+    color:var(--font-dark-color);
+  }
+  #root{
+    background-color:inherit;
+    color:inherit;
   }
 
   html {

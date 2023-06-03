@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const ProjectCard = styled.li`
   display: flex;
+  background-color: var(--main-color);
   gap: 3rem;
   flex-direction: column;
   padding: 2rem 1.5rem;
@@ -26,6 +27,7 @@ export const ProjectCard = styled.li`
 export const ProjectName = styled.h3`
   font-size: 2rem;
   text-align: center;
+  text-transform: capitalize;
 `
 export const ProjectDescription = styled.p`
   font-size: 1.8rem;

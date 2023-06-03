@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLinks } from '../NavLinks'
 import * as Styled from './styles'
 import { IconMobile } from '../IconMobile'
+import { Anchor } from '../Anchor'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +17,10 @@ export const Header = () => {
   }
   return (
     <Styled.HeaderContainer>
-      <Styled.LogoText>Paulo</Styled.LogoText>
+      <Anchor link="#home">
+        <Styled.LogoText>Paulo</Styled.LogoText>
+      </Anchor>
+
       <NavLinks onClick={handleClick} isOpen={isOpen} />
       <IconMobile isOpen={isOpen} onClick={handleShowMenu} />
     </Styled.HeaderContainer>

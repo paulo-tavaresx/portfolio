@@ -22,7 +22,7 @@ export const SkillCard = styled.li`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--cards-background-color);
+  background-color: var(--main-color);
   box-shadow: 0.4rem 0.4rem 1.5rem rgba(0, 0, 0, var(--shadow-opacity));
 `
 export const TechName = styled.h3`

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Link = styled.a`
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 
   @media screen and (min-width: 769px) {
     &:hover {

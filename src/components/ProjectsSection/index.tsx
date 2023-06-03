@@ -2,11 +2,10 @@ import * as Styled from './styles'
 import { SectionContainer } from '../SectionContainer'
 import { useEffect, useState } from 'react'
 import { iRepos } from '../../types/iRepos'
-// import { getApiGitData } from '../../utils/getApiData'
 import { ProjectCard } from '../ProjectCard'
 import { CategoryTitle } from '../CategoryTitle'
-import { apitDataMockup } from '../../utils/apiDataMockup'
 import { techsNamesFilter } from '../../utils/techsFilterFunc'
+import { getApiGitData } from '../../utils/getApiData'
 
 type Props = {
   id: string
@@ -16,11 +15,9 @@ export const ProjectsSections = ({ id }: Props) => {
   const [reposData, setReposData] = useState<iRepos[] | []>([])
 
   useEffect(() => {
-    // getApiGitData().then(response => {setReposData(response)})
-
-    setReposData(
-      apitDataMockup.filter(({ topics }) => topics.includes('pinned'))
-    )
+    getApiGitData().then(response => {
+      setReposData(response.filter(({ topics }) => topics.includes('pinned')))
+    })
   }, [])
   return (
     <SectionContainer id={id}>
@@ -31,8 +28,8 @@ export const ProjectsSections = ({ id }: Props) => {
         {reposData.map(
           ({ name, html_url, homepage, topics, description }, index) => (
             <ProjectCard
-              projectPreview={`${homepage}/preview.png`}
               key={index}
+              preview={topics.includes('preview')}
               projectName={name}
               projectRepository={html_url}
               projectPage={homepage ?? null}

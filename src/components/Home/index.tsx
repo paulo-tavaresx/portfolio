@@ -25,7 +25,7 @@ export const Home = ({ id }: Props) => {
               label="linkedin"
             />
             <IconLink
-              className="devicon-github-original colored"
+              className="devicon-github-original"
               link="https://github.com/paulo-tavaresx"
               target="_blank"
               label="github"

@@ -23,6 +23,6 @@ export const TextSecondary = styled.h2`
 `
 
 export const TextEmphasis = styled.strong`
-  color: var(--emphasis-color);
+  color: var(--secondary-color);
   display: block;
 `

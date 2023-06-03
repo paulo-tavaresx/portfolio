@@ -5,8 +5,8 @@ import { techIcons } from '../../utils/techsIcons'
 import * as Styled from './styles'
 
 type Props = {
+  preview: boolean
   projectName: string
-  projectPreview: string
   projectRepository: string
   projectPage: string | null
   techsName: [keyof typeof techIcons]
@@ -14,8 +14,8 @@ type Props = {
 }
 
 export const ProjectCard = ({
+  preview,
   projectName,
-  projectPreview,
   projectRepository,
   projectPage,
   techsName,
@@ -24,33 +24,35 @@ export const ProjectCard = ({
   return (
     <Styled.ProjectCard>
       <Imagem
-        src={'/aboutImagem.webp'}
         width={40}
         ratio="2/1.5"
-        alt={`Project ${projectName} Image Preview ${projectPreview} `}
+        alt={`Project ${projectName} Image Preview`}
         radius="1.5"
+        src={preview ? '/preview.webp' : '/previewDefault.webp'}
       />
       <Styled.Container>
-        <Styled.ProjectName>{projectName}</Styled.ProjectName>
+        <Styled.ProjectName>
+          {projectName.replace(/-/g, ' ')}
+        </Styled.ProjectName>
 
         <Styled.ProjectDescription>
           {projectDescription ?? 'Descrição em breve'}
         </Styled.ProjectDescription>
 
         <Styled.ContentContainer>
-          {techsName.map(key => (
-            <Icon width={3} className={techIcons[key]} />
+          {techsName.map((key, index) => (
+            <Icon key={index} width={3} className={techIcons[key]} />
           ))}
         </Styled.ContentContainer>
 
         <Styled.ContentContainer>
           <ButtonLink radius={1} target="_blank" link={projectRepository}>
             Repositorio{' '}
-            <Icon width={2} className="devicon-github-original colored"></Icon>
+            <Icon width={2} className="devicon-github-original"></Icon>
           </ButtonLink>
           {projectPage && (
             <ButtonLink radius={1} target="_blank" link={projectRepository}>
-              Ver Projeto{' '}
+              Ver Projeto
             </ButtonLink>
           )}
         </Styled.ContentContainer>

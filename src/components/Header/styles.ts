@@ -8,11 +8,13 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--header-color);
+  color: inherit;
+  background-color: var(--secondary-color);
   @media screen and (min-width: 769px) {
     padding: 2rem max(calc((100% - 120rem) / 2), 5rem);
   }
 `
 export const LogoText = styled.h1`
   font-size: 3.5rem;
+  color: inherit;
 `

@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
   display: flex;
   align-items: center;
   gap: 2rem;
-  background-color: var(--header-color);
+  background-color: var(--secondary-color);
   @media screen and (min-width: 769px) {
     padding: 2rem max(calc((100% - 120rem) / 2), 5rem);
   }

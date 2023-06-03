@@ -9,10 +9,10 @@ export const NavItem = styled.li`
       content: '';
       position: absolute;
       width: 0;
-      top: 2rem;
+      top: 2.5rem;
       left: 0;
-      height: 0.3rem;
-      background-color: var(--main-color);
+      height: 0.4rem;
+      background-color: var(--main-light-color);
       transition: 0.3s ease-in-out;
     }
 

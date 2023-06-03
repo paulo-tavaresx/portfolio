@@ -18,11 +18,11 @@ export const ButtonLink = styled.a<typeButton>`
   display: flex;
   cursor: pointer;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   font-weight: 400;
-  color: var(--font-light-color);
+  color: inherit;
   border: 0.3rem solid var(--secondary-color);
-  background-color: var(--cards-background-color);
 
   @media screen and (min-width: 769px) {
     &:hover {

@@ -13,7 +13,7 @@ const IconTag = styled.i<iconType>`
   ${({ width }) => css`
     font-size: ${width ?? 4}rem;
   `}
-  color: black;
+  color: inherit;
 `
 
 export const Icon = ({ className, width }: Props) => {

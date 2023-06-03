@@ -36,32 +36,27 @@ export const MenuIcon = styled.div`
   }
 `
 export const Line = styled.div<lineType>`
-  background-color: white;
+  background-color: var(--font-light-color);
   width: 3rem;
   height: 0.5rem;
   border-radius: 0.3rem;
   transition: 0.4s;
 
-  &::before {
-    content: '';
-    background-color: white;
-    width: 3rem;
-    height: 0.5rem;
-    border-radius: 0.3rem;
-    position: absolute;
-    top: 0;
-    transition: 0.4s;
-  }
-
+  &::before,
   &::after {
     content: '';
-    background-color: white;
+    background-color: var(--font-light-color);
     width: 3rem;
     height: 0.5rem;
     border-radius: 0.3rem;
     position: absolute;
-    bottom: 0;
     transition: 0.4s;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
   }
 
   ${({ isOpen }) => css`
