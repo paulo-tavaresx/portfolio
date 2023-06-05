@@ -51,8 +51,7 @@ export const ProjectCard = ({
             <Icon width={2} className="devicon-github-original"></Icon>
           </ButtonLink>
           {projectPage && (
-            <ButtonLink radius={1} target="_blank" link={projectRepository}>
-              Ver Projeto
+            <ButtonLink radius={1} target="_blank" link={projectPage}>
             </ButtonLink>
           )}
         </Styled.ContentContainer>
