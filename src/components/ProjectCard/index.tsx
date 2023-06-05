@@ -52,6 +52,7 @@ export const ProjectCard = ({
           </ButtonLink>
           {projectPage && (
             <ButtonLink radius={1} target="_blank" link={projectPage}>
+              Ver Projeto
             </ButtonLink>
           )}
         </Styled.ContentContainer>
