@@ -10,7 +10,7 @@ type Props = {
 export const About = ({ id }: Props) => {
   return (
     <SectionContainer id={id}>
-      <CategoryTitle top={2} bottom={3.5}>
+      <CategoryTitle top={3.8} bottom={3.5}>
         Sobre mim
       </CategoryTitle>
       <Styled.ContainerFlex>
