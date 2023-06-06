@@ -25,7 +25,7 @@ export const ProjectCard = ({
     <Styled.ProjectCard>
       <Imagem
         width={40}
-        ratio="2/1.5"
+        fit={true}
         alt={`Project ${projectName} Image Preview`}
         radius="1.5"
         src={preview ? projectPage + '/preview.webp' : '/previewDefault.webp'}

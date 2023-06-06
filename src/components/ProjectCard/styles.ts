@@ -12,6 +12,7 @@ export const ProjectCard = styled.li`
     flex-direction: row;
     max-width: 86rem;
     width: 100%;
+    align-items: center;
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
