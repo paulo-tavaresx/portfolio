@@ -28,7 +28,11 @@ export const ProjectCard = ({
         fit={true}
         alt={`Project ${projectName} Image Preview`}
         radius="1.5"
-        src={preview ? projectPage + '/preview.webp' : '/previewDefault.webp'}
+        src={
+          preview
+            ? projectPage?.replace(/\/$/, '') + '/preview.webp'
+            : '/previewDefault.webp'
+        }
       />
       <Styled.Container>
         <Styled.ProjectName>
